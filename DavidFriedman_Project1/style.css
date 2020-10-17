@@ -1,0 +1,51 @@
+ @font-face {
+   font-family: "HelloCrafter";
+   src: url(/Users/DavidFriedman/Documents/School/UF/Web-Design/Assignment3-Friedman-David/Fonts/HelloCrafter.ttf) format('truetype');
+ }
+
+h1,h2,h3{
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+  font-family:'HelloCrafter', cursive;
+  font-size: 32px;
+}
+
+p{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+}
+
+body{
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: hsla(0, 0%, 78%);
+}
+
+.WS1, .WS2{
+  border-width: 20px;
+  border-style: double;
+  border-radius: 32px;
+  border-color: #092C5C #8FBCE6;
+  color: #092C5C;
+  padding: 10px 10px;
+  margin: 20px 5px;
+  text-align: center;
+}
+
+.Season{
+  border-width: 20px;
+  border-style: double;
+  border-radius: 32px;
+  border-color:#8FBCE6 #092C5C;
+  color: #8FBCE6;
+  padding: 10px 10px;
+  margin: 20px 5px;
+  text-align: center
+}
+.WS1{
+  image-orientation: right
+}
