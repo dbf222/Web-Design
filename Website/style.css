@@ -31,6 +31,13 @@
 
 /*Footer*/
 
+
+.pics{
+align-items: center;
+}
+.socialmedia{
+  align-items: flex-start;
+}
 .footer{
   position: fixed;
   width: 100%;
