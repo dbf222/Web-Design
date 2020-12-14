@@ -52,26 +52,26 @@ h2{
 *=====================================*/
 nav{
    display: flex;
-   position: absolute;
-   top:0;
    width: 100%;
    overflow: auto;
    height: auto;
    padding-top: 50px;
+   align-items: center;
+   background: #f7e5e3;
 }
 
 .left-link{
   font-family: "BodoniXT";
   font-size: 20px;
-  flex:1 300px ;
+  flex:1 auto ;
   padding-left: 30px;
   font-weight: lighter;
 }
 
 .right-links{
-  padding: 15px 50px 0px 350px;
-  flex: 2 40px;
   color: white;
+  flex: 1 auto;
+  text-align: right;
 
 }
 nav a {
@@ -94,8 +94,17 @@ nav ul li{
 }
 
 .nav-alt a{
-  color: white
-
+  color: white;
+}
+.nav2{
+  background: transparent;
+  display: flex;
+  width: 100%;
+  overflow: auto;
+  height: auto;
+  padding-top: 50px;
+  align-items: center;
+  background: #f7e5e3;
 }
 /*===================================
 
@@ -106,17 +115,37 @@ Footer style
 
 
 footer{
-  background: #333;
-  padding:10px 30px;
-  position: relative;
+   display: flex;
+   width: 100%;
+   overflow: auto;
+   height: auto;
+   background: #333;
 }
 
+.socialmedia {
+  display: flex;
+}
 footer img {
   width: 60px
 }
+.footl{
+  flex:1 auto ;
+  width: 400px;
+}
+
+.footr{
+  flex: 1 auto;
+  text-align: right;
+  width: 50%;
+  padding-left: 200px;
+}
 
 
 
+.footl {
+padding-left: 10%;
+width: 400px;
+}
 /*===================================
 
 
@@ -133,6 +162,8 @@ footer img {
   -o-background-size: cover;
   background-size: cover;
   padding: 400px 50px;
+  padding-top: -100px;
+  margin-top: -100px;
 }
 
 
@@ -183,12 +214,19 @@ width: 150px
 
 
 /*================
+
+
+
 slideshow
+
+
+
+
 =========*/
 .slideshow{
   background-color: #f7e5e3;
-  padding-left: 445px;
-  padding-right: 445px;
+  padding-left: 25%;
+  padding-right: 25%;
   padding-bottom: 20px;
 }
 
@@ -266,7 +304,9 @@ slideshow
 }
 
 
-
+.mySlides img{
+  width: 100%;
+}
 
 /*===================================
 
@@ -281,7 +321,7 @@ slideshow
   min-width: auto;
   min-height: 100%;
   background-color: #f7e5e3;
-  padding-top: 200px;
+  padding-top: 100px;
 
 }
 
@@ -290,10 +330,229 @@ slideshow
   font-family: "BodoniXT", Serif;
   font-size: 57px;
   padding-bottom: 50px;
+  font-weight: 300;
 }
 
 .button {
-  background-color: white;
+  background-color: #f7e5e3;
   color: black;
   border: 2px solid #555555;
+  font-family: "Sofia-Light",sans-serif ;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 21px 34px;
+  font-weight: 600;
+  letter-spacing: .1em;
 }
+
+.button:hover {
+  background-color: black;
+  color: #f7e5e3;
+  border-color: rgba(214,118,107, .5);
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+.rsbtn{
+  margin-left: 30px;
+  margin-right: 30px
+}
+.hsbtn{
+  margin-left: 400px;
+
+}
+
+
+
+
+.rsl-container {
+padding-left: 37.5%;
+min-height: 600px;
+background-color: #f7e5e3
+}
+
+
+.rsl-container {
+padding-left: 25%;
+min-width: 400px;
+padding-left: 37.5%;
+}
+slider{
+  display: block;
+  width: 25%;
+  height: 600px;
+  overflow:hidden;
+  position: absolute;
+}
+
+slider > * {
+  position: absolute;
+  display: block;
+  width:100%;
+  height:100%;
+  background: red;
+  animation: slide 12s infinite;
+  overflow: hidden;
+}
+
+
+slide:nth-child(1){
+  left:0%;
+  animation-delay: -1s;
+  background-image: url("images/Resume/reel/hs1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+slide:nth-child(2){
+    left:0%;
+  animation-delay: 2s;
+  background-image: url("images/Resume/reel/hs2.jpg");
+  background-size:  cover;
+  background-position: center;
+}
+
+slide:nth-child(3){
+  animation-delay: 5s;
+  background-image: url("images/Resume/reel/hs3.png");
+  background-size:cover;
+  background-position: center;
+}
+
+slide:nth-child(4){
+
+  animation-delay: 8s;
+  background-image: url("images/Resume/reel/hs4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+@keyframes slide {
+  0%{ left: 100%; width: 100%;}
+  5% { left:0%}
+  25% {left: 0%}
+  30% {left:-100% ;width: 100%}
+  30.0001% { left: -100%; width: 0%;}
+  100%{ left: 100% ; width: 0%}
+}
+
+
+
+
+
+
+
+/*===================================
+
+
+  Contact Styling
+
+
+*=====================================*/
+.contact-me{
+  background-color: #f7e5e3;
+}
+
+
+
+.LA{
+    text-align: right;
+    margin-left: 22%;
+    line-height: 30px;
+    float:left
+}
+
+.NYC{
+  margin-right: 22%;
+  line-height: 30px;
+  float: right;
+}
+
+.Avalon img{
+  position: relative;
+  padding-left:25%;
+  padding-right: 25%;
+  width: 50%;
+  padding-bottom: 10px;
+  padding-top: 100px
+}
+
+.Avalon h1{
+  font-family: "BodoniXT";
+  font-size: 30px;
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 15px;
+}
+
+
+/*=========================
+
+Form Style
+
+
+=========================*/
+
+
+
+.Form{
+  max-width: 500px;
+  margin:auto ;
+  position: static;
+  background-color: #f7e5e3;
+  padding-bottom: 50px;
+padding-left: 25%;
+padding-right: 25%;
+}
+
+.label_imput_wrap{
+  display:inline;
+  font-weight: normal;
+}
+
+.submit input{
+  background:#f7e5e3;
+  color: black;
+  padding: 1px;
+  position:relative;
+
+}
+.submit{
+  border-width: medium;
+  border-color: white;
+
+}
+
+.input-section{
+  margin-bottom: 20px;
+  font-size: 15px;
+
+
+}
+
+
+/*/////////inputs////////*/
+
+
+input {
+    padding: 5px 10px;
+    border-radius:3px;
+    font-family: 'Sofia';
+    background-color: white;
+    border: .5px solid grey;
+    line-height: 30px;
+    width: 100%;
+    font-size: 15px;
+}
+
+textarea{
+  font-family: 'Sofia';
+  padding: 10px 10px;
+  background-color: white;
+  border: 1px solid grey;
+  width: 100%;
+  min-height: 150px;
+}
+
+.row {
+  padding-top: 100px;}

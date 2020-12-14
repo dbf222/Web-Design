@@ -1,31 +1,119 @@
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>David B. Friedman</title>
+  <title>Resume-David B. Friedman</title>
 
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="//db.onlinewebfonts.com/c/b3be20d887cc494d12ade85591c774a8?family=Sofia+Pro+Light" rel="stylesheet" type="text/css"/>
+
+  <link rel="icon" type="image/png" href="images/Favicon.png">
+
+</head>
+  <body class="contact-me">
     <header>
-      <h2>David B. Friedman</h2>
+
         <nav>
-          <ul>
-            <li><a href="home.html">Welcome</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-          </ul>
+
+            <div class="left-link">
+              <h2>David B. Friedman</h2>
+            </div>
+
+            <div class="right-links">
+              <a href="home.html">WELCOME</a>
+              <a href="about.html">ABOUT ME</a>
+              <a href="resume.html">RESUME</a>
+              <a href="media.html">MEDIA</a>
+              <a href="contact.html">CONTACT ME</a>
+            </div>
+
+
+
+
         </nav>
     </header>
 
+
+
+
     <main>
-      <section class="smile-image-section">
-        <h1>David B. Friedman</h1>
+      <section class="Contact">
+        <div class="Avalon">
+          <img src="images/avalon+logo.jpg" alt="Avalon Artist Group">
+          <h1>Craig Holzberg- Owner/Agent; Ellery Sandhu- Agent</h1>
+        </div>
+
+        <div class="LA">
+          <p>5455 Wilshire Blvd. Suite 900 Los Angeles, CA 90036 </p>
+          <p>Phone: (323)-692-1700 Fax: (323)-692-1722</p>
+        </div>
+
+        <div class="NYC">
+          <p>45 West 29th Street, Suite 403 New York, NY   10001</p>
+          <p class="num">Phone: (212)-868-3200 Fax: (212)-868-3210</p>
+        </div>
+
+
+
+
+
+        <div class="Form">
+          <form class="contact" id="test_form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+            <div class="row input-container">
+
+                <h2>Name:</h2>
+
+                <div class="First-Name input-section">
+                  <input type="text" name="Firstname" id="Firstname" required/>
+                  <label type="Name" for="Firstname" class="label_imput_wrap">First Name</label>
+                </div>
+
+                <div class="Last-Name  input-section">
+                  <input type="text" name="Lastname" id="Lastname" required/>
+                  <label type="Name" for="Lastname" class="label_imput_wrap">Last Name</label>
+                </div>
+
+                <div class="Email input-section">
+                  <label for="Email" class="label_imput_wrap">Email Address:</label>
+                  <input type="email" name="Email" id="Email" required/>
+                </div>
+
+                <div class="Subject input-section">
+                  <label for="Subject" class="label_imput_wrap">Subject:</label>
+                  <input type="text" name="Subject" id="Subject" required />
+                </div>
+
+              <div class="Message input-section">
+                <label for="Message" class="label_imput_wrap"> Message:</label>
+                <textarea name="Message" id="Message" readonly></textarea>
+              </div>
+
+              <div class="submit">
+                <input type="submit" value="SUBMIT">
+              </div>
+
+            </div>
+          </form>
+        </div>
       </section>
     </main>
+    <footer>
+      <div class="socialmedia">
+        <div class="footl">
+          <a href="https://www.facebook.com/dbf222" target="_blank"><img src='images/Footer/Facebook_logo.png' alt="Facebook" title= "@dbf222"></a>
+
+          <a href="https://www.youtube.com/user/22dbf" target="_blank"><img src='images/Footer/youtube_logo.png' alt="youtube" title= "@22dbf"></a>
+
+          <a href="https://www.instagram.com/davidbfriedman/" target="_blank"><img src='images/Footer/instagram_logo.png' alt="Instagram" title= "@davidbfriedman"></a>
+        </div>
+
+        <div class="footr">
+          <a href="https://avalonartists.com/" target="_blank"> <img class="infopic1" src="images/Footer/avalon.png" alt="Avalon Artists Agency"></a>
+          <a href="https://actorsequity.org/" target="_blank"> <img class="infopic2" src="images/Footer/AEAlogo.png" alt="Actors Equity Association"></a>
+
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
