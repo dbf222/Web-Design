@@ -156,7 +156,7 @@ width: 400px;
 
 
 .smile-image-section{
-  background-image: url('/Users/DavidFriedman/Documents/School/UF/Web-Design/Website/images/Homepage.png');
+  background-image: url('images/Homepage.png');
   -webkit-background-size:cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -178,7 +178,7 @@ width: 400px;
 *=====================================*/
 .about{
   background-color: #f7e5e3;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 .about p{
@@ -352,11 +352,10 @@ slideshow
    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
 }
 .rsbtn{
-  margin-left: 30px;
-  margin-right: 30px
+  margin-left: 15%;
 }
 .hsbtn{
-  margin-left: 400px;
+  margin-left: 25%;
 
 }
 
@@ -439,8 +438,72 @@ slide:nth-child(4){
 
 
 
+/*===================================
 
 
+  Media Styling
+
+
+*=====================================*/
+
+.media-container{
+  background-color: #f7e5e3;
+  padding-left: 6%;
+padding-right: 6%;
+}
+
+.media-pics img{
+    width:100%;
+}
+
+.media-pics > h1:nth-child(1) {
+padding-right: 45%;
+padding-left: 45%;
+}
+
+div.row:nth-child(2) {
+padding-top: 50px;
+}
+
+.column {
+  float:left;
+  padding: 5px;
+  width: 19.2%;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.media-container h1{
+  font-size: 40px;
+  text-align: center;
+  padding-top: 5%;
+}
+
+
+
+
+
+.ytvideos{
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 5%
+}
+
+.ytvideos p {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.video {
+padding-top: 3%;
+padding-left: 5.5%;
+padding-bottom: 4%
+}
 /*===================================
 
 
