@@ -452,6 +452,10 @@ slide:nth-child(4){
 padding-right: 6%;
 }
 
+.text{
+  padding-top: 4%;
+  font-size: 100%
+}
 .media-pics img{
     width:100%;
 }
