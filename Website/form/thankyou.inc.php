@@ -48,168 +48,292 @@ p{
   line-height: 30px;
 }
 
-/*=========================
-
-Header Style
+/*===================================
 
 
-=========================*/
-header{
-  padding: 50px;
-  padding-top: 0px;
-  background-color: #f1d3cf;
-  min-width: 100%;
+  Universal Styling
+
+
+*=====================================*/
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+
 }
 
-.header-name{
-  font-family: 'BodoniXT';
-font-weight: 400;
-font-style: normal;
-font-size: 38px;
-letter-spacing: 0em;
-line-height: .8em;
-text-transform: capitalize;
+
+@font-face {
+  font-family: "Sofia";
+  src: url(Fonts/Sofia.ttf) format('truetype');
 }
 
-.header-name{
-  box-sizing: border-box;
-  display: block;
-  float: left;
-  line-height: 30px;
-  width: 593.217px;
-  height: 40.4px;
-  position:static;
-  z-index: auto;
+@font-face {
+  font-family: "Sofia-Light"; src: url(url("//db.onlinewebfonts.com/t/b3be20d887cc494d12ade85591c774a8.ttf") format("truetype") }
+
+@font-face {
+  font-family: "BodoniXT";
+  src: url(Fonts/BodoniXT.ttf) format('truetype');
 }
 
-header a{
-font-family: "Sofia";
-font-weight: 600;
-font-style: normal;
-font-size: 11px;
-letter-spacing: .3em;
-text-transform: uppercase;
-text-align: right;
-box-sizing:content-box;
-display: block;
-float: right;
-position: static;
-z-index: auto;
-color: white;
-text-decoration: none;
-display: inline;
-list-style: none;
-padding-right: 30px;
-width: 733.783;
-height: 21px;
+p,
+h3{
+  font-family: "Sofia", sans-serif;
 }
 
+h1,
+h2{
+  font-family: 'BodoniXT', serif;
+  font-weight: lighter;
+}
+
+.container{
+  padding: 17px ;
+}
+
+.italic{
+  font-style: italic;
+}
+/*===================================
+
+
+  Header Styling
+
+*=====================================*/
+nav{
+   display: flex;
+   width: 100%;
+   overflow: auto;
+   height: auto;
+   padding-top: 50px;
+   align-items: center;
+   background: #f7e5e3;
+}
+
+.left-link{
+  font-family: "BodoniXT";
+  font-size: 20px;
+  flex:1 auto ;
+  padding-left: 30px;
+  font-weight: lighter;
+}
+
+.right-links{
+  color: white;
+  flex: 1 auto;
+  text-align: right;
+
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Sofia-Light', sans-serif;
+  font-size: 13px;
+  margin: 0px 10px;
+
+}
 nav a:hover {
-  color: grey;
+  color: black;
+  opacity: 50%;
   transition: .2s;
   list-style: none;
 }
 
-nav ul{
-  list-style: outside none none;
-  padding-right: 50px;
-  padding-top: 30px;
+nav ul li{
+  color: white;
 }
 
-nav h1{
+
+/*===================================
+
+
+Footer style
+
+*=====================================*/
+
+
+footer{
+   display: flex;
+   width: 100%;
+   overflow: auto;
+   height: auto;
+   background: #333;
+}
+
+.socialmedia {
+  display: flex;
+}
+footer img {
+  width: 60px
+}
+.footl{
+  flex:1 auto ;
+  width: 400px;
+}
+
+.footr{
+  flex: 1 auto;
+  text-align: right;
+  width: 50%;
+  padding-left: 200px;
+}
+
+
+
+.footl {
+padding-left: 10%;
+width: 400px;
+}
+
+
+
+/*===================================
+
+
+  Contact Styling
+
+
+*=====================================*/
+.contact-me{
+  background-color: #f7e5e3;
+}
+
+
+
+.LA{
+    text-align: right;
+    margin-left: 22%;
+    line-height: 30px;
+    float:left
+}
+
+.NYC{
+  margin-right: 22%;
+  line-height: 30px;
+  float: right;
+}
+
+.Avalon img{
+  position: relative;
+  padding-left:25%;
+  padding-right: 25%;
+  width: 50%;
+  padding-bottom: 10px;
+  padding-top: 100px
+}
+
+.Avalon h1{
   font-family: "BodoniXT";
   font-size: 30px;
-  padding-bottom: 20px;
-}
-
-/*========
-Footer
-=========*/
-.footer{
-  position:relative;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  height: 150px;
-  min-width: 100%;
-  background-color: grey;
-}
-
-/* Social MEdia Codes */
-.ftimg{
-  float: right;
-  padding-right: 150px
-}
-
-
-.soicalmedia {
-padding-top: 50px;
-}
-.fa {
-  padding: 20px;
-  font-size: 50px;
-  width: 30px;
   text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 15px;
 }
 
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
 
 </style>
 
 
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Actor, Friedman, David ">
+  <meta name="description" content="Actor David B. Friedman, represented by Avalon Artists Agency">
+
+
+  <title>Contact Me-David B. Friedman</title>
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="//db.onlinewebfonts.com/c/b3be20d887cc494d12ade85591c774a8?family=Sofia+Pro+Light" rel="stylesheet" type="text/css"/>
+
+  <link rel="icon" type="image/png" href="images/Favicon.png">
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SHR84K5GXJ"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SHR84K5GXJ');
+</script>
+
+
+
+
 </head>
+  <body class="contact-me">
+    <header>
 
-<body>
-
-  <header class="Header">
-      <div container="right" class=topnav>
         <nav>
 
-            <ul>
-              <li class="header-name"><h1>David B. Friedman</h1></li>
-              <li><a href="contact.html"> Contact Me</a></li>
-              <li><a href="media.html"> Media</a></li>
-              <li ><a href="resume.html"> Resume</a></li>
-              <li class="nav2"><a href="about.html"> About Me</a></li>
-              <li class="nav1"><a href="home.html"> Home</a></li>
-            </ul>
+            <div class="left-link">
+              <h2>David B. Friedman</h2>
+            </div>
+
+            <div class="right-links">
+              <a href="home.html">WELCOME</a>
+              <a href="about.html">ABOUT ME</a>
+              <a href="resume.html">RESUME</a>
+              <a href="media.html">MEDIA</a>
+              <a href="contact.html">CONTACT ME</a>
+            </div>
+
+
+
+
         </nav>
-    </div>
-  </div>
-</header>
+    </header>
 
-  <main>
-    <h2>Thank you for your message</h2>
-    <p> I've gotten your message, and we get right back to you!</p>
 
-  </main>
 
-<footer class="footer">
-  <nav class="soicalmedia">
-    <a href="https://www.instagram.com/davidbfriedman/" target="_blank" class="fa fa-instagram"></a>
-    <a href="https://twitter.com/DavidBenjaminF/" target="_blank"class=" fa fa-twitter"></a>
-    <a href="https://www.youtube.com/user/22dbf/" target="_blank"class="fa fa-youtube"></a>
-    <img src="images/AEALogo.png" alt="Actors Equity Logo" title="Actors Equity Association" class="ftimg">
-    <img src="images/avalon.png" alt="Avalon Artists" title="Avalon Artists" class="ftimg">
-  </nav>
-  </footer>
-</body>
+
+    <main>
+      <section class="Contact">
+        <div class="Avalon">
+          <img src="images/avalon+logo.jpg" alt="Avalon Artist Group">
+          <h1>Craig Holzberg- Owner/Agent; Ellery Sandhu- Agent</h1>
+        </div>
+
+        <div class="LA">
+          <p>5455 Wilshire Blvd. Suite 900 Los Angeles, CA 90036 </p>
+          <p>Phone: (323)-692-1700 Fax: (323)-692-1722</p>
+        </div>
+
+        <div class="NYC">
+          <p>45 West 29th Street, Suite 403 New York, NY   10001</p>
+          <p class="num">Phone: (212)-868-3200 Fax: (212)-868-3210</p>
+        </div>
+
+      </section>
+
+      <section>
+        <div>
+          <h1>Thank you for contacting me. I will try to get back to you as soon as possible.- David</h1>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="socialmedia">
+        <div class="footl">
+          <a href="https://www.facebook.com/dbf222" target="_blank"><img src='images/Footer/Facebook_logo.png' alt="Facebook" title= "@dbf222"></a>
+
+          <a href="https://www.youtube.com/user/22dbf" target="_blank"><img src='images/Footer/youtube_logo.png' alt="youtube" title= "@22dbf"></a>
+
+          <a href="https://www.instagram.com/davidbfriedman/" target="_blank"><img src='images/Footer/instagram_logo.png' alt="Instagram" title= "@davidbfriedman"></a>
+        </div>
+
+        <div class="footr">
+          <a href="https://avalonartists.com/" target="_blank"> <img class="infopic1" src="images/Footer/avalon.png" alt="Avalon Artists Agency"></a>
+          <a href="https://actorsequity.org/" target="_blank"> <img class="infopic2" src="images/Footer/AEAlogo.png" alt="Actors Equity Association"></a>
+
+        </div>
+      </div>
+    </footer>
+  </body>
